@@ -3,5 +3,4 @@ Location of all files as part of Udacity Intro to Programming Nanodegree
 
 Hey world, just testing out Github for the first time!
 
-
-Testing one two three.
+First file added is notes from Lesson 1 on fundamentals of HTML.
