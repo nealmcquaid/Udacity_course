@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<!-- This line defines something called "character encoding"
+	This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+	You should include this line in the head of all of your webpages. -->
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- link to primary stylesheet -->
+
+	<title>My experimental CSS page on my history of the Internet</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+
+	<link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="wrapper1">
+	  <header class="header"><h1>My Final Stage 1 Notes</h1></header>
+
+	  <aside class="aside section1_title">Introduction</aside>
+
+		<article class="section1_main">
+			<div id="header3_boxes">
+				<h3>Welcome!</h3>
+			</div>
+			<p>
+				A compilation of notes covering all of Stage 1 on the Intro to Programming Nanodegree on <a href="https://www.udacity.com">Udacity.com</a>. This webpage is a compilation of my two earlier 'practise' pieces of work in Stage 1, now merging all of the HTML and CSS notes, as well as the skills learned (hopefully!) into a single document.<br>
+				If you're a pro-developer, I'll apologise in advance - this code is crude - like early-developer crude. Forgive me and enjoy my journey :)
+			</p>
+
+			<p>Additionally, if you want to know what CSS has been used on this site, here's a bit of an <a href="#CSS_used">overview</a>.</p>
+
+
+	  	<h3>What is the difference between HTML and CSS?!</h3>
+
+
+			<p class="quotes">"HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document."</p>
+			<p>Can't put it much better than <a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a>.</p>
+
+			<p>So, breaking it down, a webpage is, simplistically, made up of:</p>
+
+			<ul>
+			  <li>Content - what you see (text, images, hyperlinks, etc.)</li>
+			  <li>Mark-up - what it looks like</li>
+			</ul>
+			Originally, all mark-up would have been kept in a single HTML file, however due to complexity of modern webpages and sites, it is now best practise to store 'how' the site looks in a CSS (Cascading Style Sheet) file. This is will be covered/documented in future project files.
+
+			<p>Notes on this webpage</p>
+
+			<ul>
+				<li>Built using HTML and CSS (including use of Flex)</li>
+				<li>h3 is common across the whole webpage using CSS for the top-level container</li>
+				<li>the bullet points (such as these ones) use common CSS for the whole block</li>
+				<li>varied fonts in each section to adjust for different examples</li>
+				<li>image embedded and auto-resizes to different screen size</li>
+				<li>only one header and one footer using Flex</li>
+				<li>Didn't make multiple webpages as given as an option, however I have linked to two external sites.</li>
+			</ul>
+			Originally, all mark-up would have been kept in a single HTML file, however due to complexity of modern webpages and sites, it is now best practise to store 'how' the site looks in a CSS (Cascading Style Sheet) file. This is will be covered/documented in future project files.
+
+
+
+	  </article>
+	</div>
+
+
+
+
+
+	<div class="wrapper2">
+
+	  <aside class="aside section2_title">HTML Sample code</aside>
+
+		<article class="section2_main">
+
+			<h3>HTML Intro</h3>
+
+			<p>Below is a range of sample pieces of code and values used in HTML. It also includes a sample template that can be used anywhere - keep it safe!</p>
+
+			<h3>HTML tags</h3>
+
+			  <ol>
+			    <li>&lt;tag>content&lt;/tag> - Tags can be embedded within each other also.</li>
+			    <li>To use below - remove the '*' from each item.</li>
+			    <li>As mentioned earlier, will be moving to using CSS going forward for much of this appearance manipulation.</li>
+			  </ol>
+
+			<h4>Sample Tags</h4>
+
+			  <ul>
+			    <li>&lt;b> or &lt;strong> <b>bold</b></li>
+			    <li>&lt;i> or &lt;em> (better) <em>italic</em></li>
+			    <li>&lt;h1> or &lt;h2> or .... header sizes</li>
+			    <li>&lt;br> carriage return (new line)</li>
+			    <li>&lt;p> new paragraph (note this can be manipulated)</li>
+			    <li>&lt;ul> = an unordered list (as I've used here), and &lt;li> defines each item in the list.</li>
+			  </ul>
+
+			  <hr>
+
+			<h3>HTML attributes / Links</h3>
+
+
+			<div class="HTML_hyperlinks">
+			  <p>A hyperlink to another page (internal or external to site)</p>
+
+			  Sample: &lt;a href = "www.abcdefghijkl.com">Text displayed on-screen&lt;/a><br>
+
+
+			  <p>Image Tags can be used embed an image on the site</p>
+
+			  <p>Sample: &lt;img src = "url of the image (internal or external)" alt="text for visually impaired readers"-><br>
+			    Note: no &lt;/img> tag required.</p>
+			</div>
+
+			<hr>
+
+			  <h3>Blocks - inline, forms, etc.</h3>
+
+			  <p>Inline (the line doesn't change) = &lt;span> content &lt;/span></p>
+
+			  <p>Block (appears on next line) = &lt;div> content &lt;/div></p>
+
+			  <p>Forms (a block format) = &lt;form> content &lt;/form></p>
+
+			<hr>
+
+			  <h3>HTML template</h3>
+
+			<div class="HTML_template">
+
+		    <p>
+		      &lt;!DOCTYPE html  lang="en"><br>
+		      &lt;html><br>
+		      &lt;head><br>
+		      &lt;title>Notes from section 1 of Udacity&lt;/title><br>
+		      &lt;/head><br>
+		      <br>
+		      &lt;body><br>
+		      All content of page<br>
+		      &lt;/body><br>
+		      &lt;/html>
+		    </p>
+
+			</div>
+
+					<p>Lastly, don't forget to validate your HTML <a href="https://validator.w3.org">here</a>!</p>
+
+	  </article>
+
+
+	</div>
+
+
+
+
+
+	<div class="wrapper3">
+
+	  <aside class="aside section3_title">CSS Sample code</aside>
+
+		<article class="section3_main">
+			<h3>Fundamentals of CSS</h3>
+
+
+			<p>
+				Reminder: CSS adds to HTML to influence the 'appearance'.
+			</p>
+
+			<ul>
+				<li>Hierarchy: CSS is equivalent to: "National Laws over State Laws over Municipality Laws over House Rules".</li>
+				<li>Hence you 'cascade' down the rules to find the one most relevant to the element.</li>
+				<li>As all web browsers render each style slightly differently, it can be use to use a common CSS style-sheet to start. Here's a great <a href="http://necolas.github.io/normalize.css/">one</a> as used by Twitter, Tweetdeck, etc..</li>
+				<li>CSS references can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">here</a>.</li>
+				<li>A good page for details on Fonts in CSS is <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">here</a>.</li>
+			</ul>
+
+			<p>
+				One great link was supplied, direct url is <a href="hhttps://www.nealmcquaid.com/s/Box-Model_Demo.jpg">here</a>
+			</p>
+
+			<img src="./images/Box-Model_Demo.jpg" alt="box model demo of CSS" />
+
+
+			<p>
+				h1 {<br>
+				background-color : black;<br>
+				color: white;<br>
+				}<br>
+			</p>
+			<p>
+				In this example, 'h1' is a selector. 'background-color:black' is a declaration, of which 'background-color' is a property and 'black' is the value.
+			</p>
+
+
+			<h3>Style has a few meanings.</h3>
+				<ul>
+					<li>e.g. &lt;style>div {color:blue}&lt;/style></li>
+					<li>e.g. &lt;div style="color : blue">this text would be blue&lt;/div></li>
+				</ul>
+
+
+
+				<ul>
+					<li>Property: The property you want to change.</li>
+					<li>Value: The value that you want to assign to the attribute.</li>
+					<li>Selector: The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.</li>
+					<li>Class: A class refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks such as class="1.1"</li>
+					<li>ID: ID's are unique identifiers that uniquely identifies an element in HTML.</li>
+				</ul>
+
+
+			<p>To select a class using CSS, use the '.'</p>
+
+			<h3>sample code with styling</h3>
+
+			<p>
+				&lt;div class="stop">&lt;/div><br>
+				&lt;div class="slow">&lt;/div><br>
+				&lt;div class="go">&lt;/div><br>
+				<br>
+				&lt;style><br>
+				div {<br>
+				height : 50px;<br>
+				width : 50px;<br>
+				border-radius: 25px;<br>
+				}<br>
+				.stop {<br>
+				background-color: red;<br>
+				}<br>
+				.slow {<br>
+				background-color: yellow;<br>
+				}<br>
+				.go {<br>
+				background-color: green;<br>
+				}<br>
+				&lt;/style><br>
+				&lt;/div><br>
+			</p>
+
+			<h3><a name="CSS_used">CSS used on this page</h3>
+
+			<p>This page is created using a separate style sheet. It also makes use of Flex to provide the respsonsive page, fitting all screen sizes. There is three sections of Flex:
+				<ul>
+					<li>Wrapper1: providing the header banner and the first Introduction section. This makes use of row-wrap in CSS to adjust order of the different blocks.</li>
+					<li>Wrapper2: the information and notes on HTML. This uses column order in CSS so the title box is always above.</li>
+					<li>Wrapper3: final covers CSS (i.e. this section), which also includes the Footer.</li>
+				</ul>
+
+				There multiple tests of CSS throughout the document. All the site is in a container div, all H3 headers share common styles (centered, yellow box). Additionally, there is also some sample divs (e.g. the section in HTML where it is contained in a white box.)
+
+			<p>Lastly, don't forget to validate your CSS <a href="https://jigsaw.w3.org/css-validator/">here</a>!</p>
+	  </article>
+
+
+	  <footer class="footer">Created by Neal McQuaid, Jan 2017</footer>
+	</div>
+
+</div>
+</body>
+
+</html>
