@@ -1,0 +1,219 @@
+/* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes. Review Lesson 1.3
+if you need a refresher about how to do this. */
+
+.container h3 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.quotes {
+  text-align: center;
+  font-style: italic;
+  font-family: arial cursive;
+}
+
+.HTML_template {
+  margin-left: 30px;
+}
+
+.HTML_hyperlinks {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 15px; 
+}
+
+
+.wrapper1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper1 > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #294860;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.header h1 {
+  font-size: 5em;
+  font-family: helvetica;
+  color: white;
+
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.section1_title {
+  background: gold;
+  flex-grow: 1;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.section1_main {
+  text-align: left;
+  background: deepskyblue;
+  flex-grow: 2;
+}
+
+.section1_main div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gold;
+  border-radius: 5px;
+}
+
+.section1_main ul {
+  color: green;
+  text-transform: uppercase;
+}
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .section1_main            { flex: 3 0px; }
+  .section1_title           { order: 1; }
+  .section1_main            { order: 2; }
+  .footer                   { order: 6; }
+}
+
+body {
+  padding: 2em;
+}
+
+
+
+
+
+
+.wrapper2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+
+  text-align: center;
+}
+
+.wrapper2 > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.section2_title {
+  background: #73ff9f;
+  flex-grow: 1;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.section2_main {
+  text-align: left;
+  background: #ff7f73;
+  flex-grow: 2;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .section2_main            { flex: 3 0px; }
+  .section2_title           { order: 1; }
+  .section2_main            { order: 2; }
+}
+
+
+
+
+
+
+
+
+
+.wrapper3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper3 > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.wrapper3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.section3_title {
+  background: #8c7dff;
+  font-size: 4em;
+  font-weight: bolder;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+.section3_main {
+  text-align: left;
+  background: #ffc77d;
+  flex-grow: 1;
+}
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0px; }
+}
+
+@media all and (min-width: 800px) {
+  .section3_main            { flex: 2 0px; }
+  .section3_title           { order: 2; }
+  .section3_main            { order: 1; }
+  .footer                   { order: 3; }
+}
