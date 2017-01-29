@@ -14,6 +14,12 @@ if you need a refresher about how to do this. */
   text-align: center;
 }
 
+.section_title {
+  flex-grow: 1;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
 .quotes {
   text-align: center;
   font-style: italic;
@@ -70,9 +76,6 @@ if you need a refresher about how to do this. */
 
 .section1_title {
   background: gold;
-  flex-grow: 1;
-  font-size: 4em;
-  font-weight: bolder;
 }
 
 .section1_main {
@@ -135,9 +138,6 @@ body {
 
 .section2_title {
   background: #73ff9f;
-  flex-grow: 1;
-  font-size: 4em;
-  font-weight: bolder;
 }
 
 .section2_main {
